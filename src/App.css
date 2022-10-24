@@ -1,0 +1,35 @@
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+.App {
+  display: flex;
+  flex-direction: column;
+}
+
+.title {
+  text-shadow: 3px 3px 0 #828685;
+  vertical-align: middle;
+  text-align: center;
+}
+
+.title-img {
+  vertical-align: middle;
+}
+
+.title-img:hover {
+  filter: drop-shadow(0 0 0.2em #828685);
+}
+
+.footer {
+  position: fixed;
+  background-color: #1a1a1a;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 1rem;
+  text-align: center;
+}
