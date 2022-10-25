@@ -33,7 +33,7 @@ function App() {
 
   return (
     <div className="App">
-      <h1 className='title'>Walking <img className='title-img' src={knightImg}/> Knight</h1>
+      <h1 className='title'>Horsing  <img className='title-img' src={knightImg}/> Around</h1>
       <BoardContext.Provider value={boardContext}>
         <Info/>
         <Board size={size} />
