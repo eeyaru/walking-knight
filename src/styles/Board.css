@@ -64,12 +64,12 @@
     text-shadow: 3px 3px 0 #828685;
     vertical-align: middle;
     text-align: center;
-  }
-  
-  .title-img {
+}
+
+.title-img {
     vertical-align: middle;
-  }
-  
-  .title-img:hover {
+}
+
+.title-img:hover {
     filter: drop-shadow(0 0 0.2em #828685);
-  }
+}
