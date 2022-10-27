@@ -1,4 +1,3 @@
-import { useState } from "react";
 import knight from '../assets/knight.svg'
 
 function Knight() {

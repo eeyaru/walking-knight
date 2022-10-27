@@ -1,5 +1,5 @@
-import { useState, useContext } from "react";
-import BoardContext, { BoardContextInterface } from "../context/BoardContext";
+import { useContext } from "react";
+import BoardContext from "../context/BoardContext";
 
 function Info() {
     const boardContext = useContext(BoardContext)

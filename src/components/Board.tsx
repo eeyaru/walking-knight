@@ -1,4 +1,4 @@
-import { useState, FC, useRef, useContext, useEffect } from "react";
+import { useState, useContext, useEffect } from "react";
 import { BoardProps } from "../App"
 import Tile from "./Tile"
 import Knight from "./Knight";
@@ -20,6 +20,7 @@ const Board = (props: BoardProps) => {
     const [currKnightTile, setCurrKnightTile] = useState<string | null>(null)
     const [sleepTime, setSleepTime] = useState<number>(800)
     const boardContext = useContext(BoardContext)
+    const [tilePositions, setTilePositions] = useState<Array<Array<[number, number]>>| null>(null)
 
     // Update tile the knight is rendered in
     useEffect(() => {

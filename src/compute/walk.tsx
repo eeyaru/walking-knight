@@ -54,11 +54,6 @@ export default class Walker {
             let curr = queue.shift()
             if (curr === undefined) { break }
             curr[1] === null ? dp[curr[0][0]][curr[0][1]] = null : dp[curr[0][0]][curr[0][1]] = [curr[1][0],curr[1][1]]
-            // if (curr[1] !== null) {
-            //     dp[curr[0][0]][curr[0][1]] = [curr[1][0],curr[1][1]]
-            // } else {
-            //     dp[curr[0][0]][curr[0][1]] = null
-            // }
             if (curr[0][0] === this.end[0] && curr[0][1] === this.end[1]) {
                 return this.buildPath(dp)
             }
