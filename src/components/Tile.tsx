@@ -1,7 +1,6 @@
 import React, { useState, useContext, useEffect } from "react";
 import { Color, TileProps } from "./Board"
 import BoardContext from "../context/BoardContext";
-import Knight from "./Knight";
 
 function Tile(props: TileProps) {
     const [isSelected, setIsSelected] = useState<boolean>(false)

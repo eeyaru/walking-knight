@@ -13,7 +13,6 @@
     min-height: 2rem;
     min-width: 2rem;
     border: solid black 1px;
-    flex-grow: 1;
     display: flex;
 }
 
@@ -41,13 +40,15 @@
     align-items: column;
     border: solid black 2px;
     margin: 0.5rem;
+    max-width: fit-content;
 }
 
 .knight {
-    max-width: 2rem;
-    max-height: 2rem;
-    position: relative;
+    min-width: 2rem;
+    min-height: 2rem;
     transition: all 1s;
+    width: 3vh;
+    height: 3vh;
 }
 
 .info {
@@ -57,4 +58,18 @@
 
 .controls {
     margin: 0.5rem;
+}
+
+.title {
+    text-shadow: 3px 3px 0 #828685;
+    vertical-align: middle;
+    text-align: center;
+}
+
+.title-img {
+    vertical-align: middle;
+}
+
+.title-img:hover {
+    filter: drop-shadow(0 0 0.2em #828685);
 }
