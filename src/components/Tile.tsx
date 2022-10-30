@@ -24,6 +24,8 @@ function Tile(props: TileProps) {
             boardContext.setSelected((prevState: string[]) => {
                 return prevState.filter(item => item != name)
             })
+            boardContext.setShortestPath([])
+            boardContext.setBeen([])
         }
     }
 

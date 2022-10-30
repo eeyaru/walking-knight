@@ -42,7 +42,7 @@ export default class Walker {
             res.push(`${curr[0]}${curr[1]}`)
             curr = dp[curr[0]][curr[1]]
         }
-        return ([...res.reverse(), `${this.end[0]}${this.end[1]}`])
+        return ([`${this.start[0]}${this.start[1]}`, ...res.reverse(), `${this.end[0]}${this.end[1]}`])
     }
 
     findShortestPath() {
