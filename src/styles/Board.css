@@ -14,6 +14,7 @@
     min-width: 2rem;
     border: solid black 1px;
     display: flex;
+    cursor: pointer;
 }
 
 .black {
@@ -72,4 +73,62 @@
 
 .title-img:hover {
     filter: drop-shadow(0 0 0.2em #828685);
+}
+
+@media (prefers-color-scheme: light) {
+    .path-item {
+        color: rgba(255, 255, 255, 0.5);
+    }
+
+    .path-arrow {
+        color: rgba(255, 255, 255, 0.5);
+    }
+}
+
+@media (prefers-color-scheme: dark) {
+    .path-item {
+        color: rgba(26, 26, 26, 0.87);
+    }
+
+    .path-arrow {
+        color: rgba(26, 26, 26, 0.87);
+    }
+}
+
+
+.info-path {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.path-item {
+    transition: 0.3s color ease-in-out;
+}
+
+.path-arrow {
+    transition: 0.8s color ease-in-out;
+}
+
+.been-list {
+    color: lightblue;
+}
+
+
+.reset-btn:hover {
+    border: 1px solid lightcoral;
+}
+
+.reset-btn {
+    background-color: rgb(240, 128, 128, .15);
+    font-weight: 300;
+}
+
+.find-btn:hover {
+    border: 1px solid rgb(0, 128, 0);
+}
+
+.find-btn {
+    background-color: rgb(0, 128, 0, .15);
+    font-weight: 300;
 }

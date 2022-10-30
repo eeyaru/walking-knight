@@ -1,17 +1,21 @@
 import { useContext } from "react";
 import BoardContext from "../context/BoardContext";
+import { formatChessSquare } from "../util/utils";
+import InfoPath from "./InfoPath";
 
 function Info() {
     const boardContext = useContext(BoardContext)
     if (boardContext === null) { return <div></div>}
-    const { selected } = {...boardContext}
-
-    const makeChessSquare = (name: string) => {
-        return `${String.fromCharCode(parseInt(name[1])+65)}${-parseInt(name[0])+ 8}`
-    }
+    
+    const { selected, shortestPath } = {...boardContext}
     
     return(
-        <div className="info">{selected.length ? "Selected ".concat(selected.map(x => makeChessSquare(x)).join(' and ')) : "No Tiles Selected"}</div>
+        <div className="info">
+            {!shortestPath.length && <span className='selected-tiles'>
+                {selected.length ? "Selected ".concat(selected.map(x => formatChessSquare(x)).join(' and ')) : "No Tiles Selected"}
+            </span>}
+            <InfoPath/>
+        </div>
     )
 }
 

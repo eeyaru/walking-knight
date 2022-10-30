@@ -1,11 +1,10 @@
-import { useEffect, useState } from 'react'
+import { useState } from 'react'
 import knightImg from './assets/knight.svg'
 import './App.css'
 import './styles/Board.css'
 import Board from './components/Board'
 import Controls from './components/Controls'
 import BoardContext,{ BoardContextInterface } from './context/BoardContext'
-import Knight from './components/Knight'
 import Info from './components/Info'
 import Footer from './components/Footer'
 
